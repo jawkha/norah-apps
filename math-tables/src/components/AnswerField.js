@@ -8,7 +8,7 @@ function AnswerField({ answer }) {
   // const emojisForInorrectAnswers = ['🧐', '🙉', '🌶', '🔭'];
 
   const emojisForCorrectAnswers = ['🏆'];
-  const emojisForInorrectAnswers = ['🙉'];
+  const emojisForIncorrectAnswers = ['🙉'];
 
   function checkAnswer(event) {
     event.preventDefault();
@@ -46,7 +46,7 @@ function AnswerField({ answer }) {
         <span class="answer-emoji">
           {answerStatus === 'correct'
             ? displayEmoji(emojisForCorrectAnswers)
-            : displayEmoji(emojisForInorrectAnswers)}
+            : displayEmoji(emojisForIncorrectAnswers)}
         </span>
       )}
     </form>

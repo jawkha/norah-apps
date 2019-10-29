@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from './components/Main';
 import Welcome from './components/Welcome';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   const name = localStorage.getItem('name');
